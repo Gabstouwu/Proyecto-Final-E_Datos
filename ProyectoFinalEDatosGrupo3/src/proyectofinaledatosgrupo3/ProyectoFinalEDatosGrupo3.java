@@ -1,5 +1,6 @@
 package proyectofinaledatosgrupo3;
 
+import static Controlador.TestCLientes_no_usuar.listaUsuario;
 import Controlador.ListaClientes;
 import Modelo.Cliente;
 import Modelo.Vehiculos;
@@ -32,6 +33,8 @@ public class ProyectoFinalEDatosGrupo3 {
         listaV.inserta(new Vehiculos("Rojo", "Toyota", "Suv", 1, 2004, 3000, 3, 55000, 4, 4000, "nuevo"));
         listaV.inserta(new Vehiculos("verde", "Mazda", "Suv", 2, 2004, 3000, 3, 55000, 4, 4000, "Usado"));
         System.out.println(listaV.extrae(2));
+        
+        System.out.print(listaUsuario);
     }
 
 }

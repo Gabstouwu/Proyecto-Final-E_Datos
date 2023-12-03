@@ -36,13 +36,27 @@ public class MenuFrame extends javax.swing.JPanel {
         BotonLogIn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton2.setText("Clientes");
-        jButton2.setActionCommand("Clientes");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         BotonCrearUsuario.setText("Crear Usuario");
         BotonCrearUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BotonCrearUsuarioMouseClicked(evt);
+            }
+        });
+        BotonCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCrearUsuarioActionPerformed(evt);
             }
         });
 
@@ -85,6 +99,18 @@ public class MenuFrame extends javax.swing.JPanel {
     private void BotonCrearUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCrearUsuarioMouseClicked
         LoginView.crearUsuarioView();
     }//GEN-LAST:event_BotonCrearUsuarioMouseClicked
+
+    private void BotonCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonCrearUsuarioActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        CreacionClienteView.mostrarMenuClientes();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        CreacionClienteView.mostrarMenuClientes();
+    }//GEN-LAST:event_jButton2MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

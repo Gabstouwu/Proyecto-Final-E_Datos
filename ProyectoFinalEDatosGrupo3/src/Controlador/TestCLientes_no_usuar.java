@@ -4,17 +4,16 @@ import Modelo.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ControladorUsuario {
+public class TestCLientes_no_usuar {
 
-    public List<Usuario> listaUsuario= new ArrayList<>();
+    public static List<Usuario> listaUsuario= new ArrayList<>();
 
     //crear Usuario
     public void crearUsuario(Usuario nuevousuario) {
 
-        ///se resive un objeto tipo Usuario y con eso se agrega a la lista
+        listaUsuario.add(nuevousuario);
         
-        
-        
+        System.out.print(listaUsuario);
     }
 
     //generardor de contraseñas
