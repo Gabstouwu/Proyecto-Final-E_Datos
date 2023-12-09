@@ -1,7 +1,7 @@
 package proyectofinaledatosgrupo3;
 
 
-public class InformacionEmpresa {
+public  class InformacionEmpresa {
     
     String nombre= "AzzaCar"; 
     String tel= "8888-8888";
